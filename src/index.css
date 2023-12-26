@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito&family=Syne:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Syne:wght@700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,9 +18,9 @@ font-family: 'Syne', sans-serif; */
   --thirdcolor: #298b00;
   --headingcolor: #cacaca;
   --subtextcolor: #fdfdfd;
-  --tertiarycolor: #1b2534;
   --font-family-nunito: "Nunito", sans-serif;
   --font-family-syne: "Syne", sans-serif;
+  --white: #fff;
 }
 
 html {
