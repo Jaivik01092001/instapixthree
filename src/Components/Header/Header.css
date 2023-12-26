@@ -1,0 +1,59 @@
+.hederhight {
+  height: 11.2rem;
+  background-color: #101110;
+  font-family: "font-family-syne";
+}
+.hcontentheight {
+  height: 11.2rem;
+  font-family: var(--font-family-syne);
+  width: 75%;
+  margin: auto;
+}
+
+.navli {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--headingcolor);
+}
+.logo {
+  width: 11.7rem;
+  height: 7.4rem;
+}
+.contactbtn {
+  font-size: 1.3rem;
+  font-weight: 100;
+  padding: 1.3rem 1.2rem;
+  background: linear-gradient(90deg, #015be4 0%, #015be4 0%, #4ab11f 100%);
+}
+
+@media (max-width: 768px) {
+  .hederhight {
+    height: 8rem;
+  }
+  .hcontentheight {
+    width: 90%;
+    height: 8rem;
+  }
+  .logo {
+    width: 8.7rem;
+    height: 5.4rem;
+  }
+  .mobilemenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #101110;
+    color: var(--headingcolor);
+    line-height: 3.5rem;
+    font-weight: 700;
+    font-family: var(--font-family-syne);
+    background-color: #101110;
+  }
+  .contactbtn {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-family-syne);
+    padding: 0.8rem 1.5rem;
+  }
+}
