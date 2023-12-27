@@ -1,8 +1,10 @@
 import Faq from "./Components/FAQ/Faq";
+import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Hero from "./Components/HeroSection/Hero";
 import HIT from "./Components/HowItWork/HIT";
 import Keyfeature from "./Components/KeyFeature/Keyfeature";
+import Paid from "./Components/Paid/Paid";
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <HIT />
       <Faq />
       <Keyfeature />
+      <Paid />
+      <Footer />
     </>
   );
 }
