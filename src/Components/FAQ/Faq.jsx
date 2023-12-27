@@ -100,7 +100,7 @@ const Faq = () => {
     <>
       <div className="faqcontainer">
         <div className="faqtitle">
-          Find the Answers on Frequently Asked Questions
+          Find the Answers On Frequently Asked Questions
         </div>
         <div className="faqquestions">
           <div className="space-y-20">
