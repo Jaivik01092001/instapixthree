@@ -12,11 +12,17 @@
 .herotitle {
   font-family: var(--font-family-syne);
   color: var(--headingcolor);
-  font-size: 5.2rem;
+  font-size: 5.1rem;
   font-weight: 700;
-  line-height: 6.8rem;
+  line-height: 6.5rem;
   letter-spacing: 0em;
   text-align: center;
+  background: -webkit-linear-gradient(
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 230.63%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .herodescription {
   font-family: var(--font-family-nunito);
@@ -29,7 +35,7 @@
   margin: 1.5rem 0rem;
 }
 .downloadbutton {
-  width: 25%;
+  width: 22%;
   display: flex;
   justify-content: space-between;
 }

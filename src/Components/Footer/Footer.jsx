@@ -10,7 +10,7 @@ import linkedin from "../../Assets/Vector.png";
 const Footer = () => {
   return (
     <>
-      <div className="footercontainer">
+      <div className="footercontainer" id="footer">
         <div className="footerrowone flex">
           <div className="frcoloumnone">
             <div className="ltalkparent">

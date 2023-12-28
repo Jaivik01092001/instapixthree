@@ -10,7 +10,7 @@ import arrow from "../../Assets/arrow.png";
 const HIT = () => {
   return (
     <>
-      <div className="hitcontainer">
+      <div className="hitcontainer" id="ourworks">
         <div className="hittop">How It Works</div>
         <div className="hitbottom flex flex-col  ">
           <div className="flex contentcontainer">

@@ -11,11 +11,14 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-white hederhight dark:bg-gray-900 borderbottom">
+      <header
+        className="bg-white hederhight dark:bg-gray-900 borderbottom"
+        id="home"
+      >
         <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
           <div className="flex h-16 items-center justify-between hcontentheight">
             <div className="md:flex md:items-center md:gap-12">
-              <a href="/">
+              <a href="home">
                 <img className="logo" src={logo} alt="" />
               </a>
             </div>
@@ -25,10 +28,18 @@ const Header = () => {
                 <ul className="flex text-white items-center gap-14 text-sm">
                   {/* ... your navigation links here ... */}
 
-                  <li className="navli">Home</li>
-                  <li className="navli">Our Works</li>
-                  <li className="navli">Features</li>
-                  <li className="navli">FAQ</li>
+                  <a href="#home">
+                    <li className="navli">Home</li>
+                  </a>
+                  <a href="#ourworks">
+                    <li className="navli">Our Works</li>
+                  </a>
+                  <a href="#features">
+                    <li className="navli">Features</li>
+                  </a>
+                  <a href="#faq">
+                    <li className="navli">FAQ</li>
+                  </a>
 
                   {/* ... other mobile menu items ... */}
                 </ul>
@@ -39,7 +50,7 @@ const Header = () => {
               <div className="sm:flex sm:gap-4 contactbg">
                 <a
                   className="rounded-md contactbtn bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
-                  href="/"
+                  href="#footer"
                 >
                   CONTACT US
                 </a>
@@ -82,10 +93,18 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden mobilemenu">
             <ul>
-              <li>Home</li>
-              <li>Our Works</li>
-              <li>Features</li>
-              <li>FAQ</li>
+              <a href="#home">
+                <li className="navli">Home</li>
+              </a>
+              <a href="#ourworks">
+                <li className="navli">Our Works</li>
+              </a>
+              <a href="#features">
+                <li className="navli">Features</li>
+              </a>
+              <a href="#faq">
+                <li className="navli">FAQ</li>
+              </a>
             </ul>
           </div>
         )}

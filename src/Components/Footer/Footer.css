@@ -70,7 +70,7 @@
   background-color: #1d1c1f;
   justify-content: flex-start;
   align-items: center;
-  width: 80%;
+  width: 85%;
   border-radius: 10rem;
   padding: 1rem 2rem;
   margin-top: 2.5rem;
@@ -167,6 +167,7 @@ input {
 }
 .hr {
   width: 70%;
+  color: #293342;
 }
 
 @media (max-width: 768px) {

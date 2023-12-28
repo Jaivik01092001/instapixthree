@@ -4,7 +4,7 @@ import kfmockup from "../../Assets/kfmockup.png";
 
 const Keyfeature = () => {
   return (
-    <div className="keyfeaturecontainer">
+    <div className="keyfeaturecontainer" id="features">
       <div className="top">
         <div className="keyfeaturetop">Key features of user</div>
         <div className="keyfeaturebottom flex">

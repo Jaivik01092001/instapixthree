@@ -9,7 +9,14 @@
   line-height: 8.3rem;
   letter-spacing: 0em;
   text-align: center;
-  color: var(--headingcolor);
+  /* color: var(--headingcolor); */
+  background: linear-gradient(
+    to right,
+    white,
+    rgba(167, 167, 167, 1)
+  ); /* Set the gradient from white to gray horizontally */
+  -webkit-background-clip: text; /* Clip the background to the text */
+  color: transparent;
 }
 .leftmockupimg {
   background-size: contain;
