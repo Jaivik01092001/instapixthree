@@ -48,7 +48,7 @@ const Faq = () => {
               {/* 1st */}
               <details
                 style={{
-                  backgroundColor: isOpen1 ? "green" : "black",
+                  backgroundColor: isOpen1 ? "#298B00" : "black",
                   // add other styles as needed
                 }}
                 className={`group p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden faqquestioncontainer`}
@@ -96,7 +96,7 @@ const Faq = () => {
                 className={`group  p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden faqquestioncontainer`}
                 onClick={toggleFAQ2}
                 style={{
-                  backgroundColor: isOpen2 ? "green" : "black",
+                  backgroundColor: isOpen2 ? "#298B00" : "black",
                   // add other styles as needed
                 }}
               >
@@ -141,7 +141,7 @@ const Faq = () => {
                 className={`group  p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden faqquestioncontainer`}
                 onClick={toggleFAQ3}
                 style={{
-                  backgroundColor: isOpen3 ? "green" : "black",
+                  backgroundColor: isOpen3 ? "#298B00" : "black",
                   // add other styles as needed
                 }}
               >
@@ -186,7 +186,7 @@ const Faq = () => {
                 className={`group  p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden faqquestioncontainer`}
                 onClick={toggleFAQ4}
                 style={{
-                  backgroundColor: isOpen4 ? "green" : "black",
+                  backgroundColor: isOpen4 ? "#298B00" : "black",
                   // add other styles as needed
                 }}
               >
@@ -231,7 +231,7 @@ const Faq = () => {
                 className={`group  p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden faqquestioncontainer`}
                 onClick={toggleFAQ5}
                 style={{
-                  backgroundColor: isOpen5 ? "green" : "black",
+                  backgroundColor: isOpen5 ? "#298B00" : "black",
                   // add other styles as needed
                 }}
               >
