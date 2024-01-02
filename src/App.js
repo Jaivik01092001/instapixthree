@@ -5,6 +5,7 @@ import Hero from "./Components/HeroSection/Hero";
 import HIT from "./Components/HowItWork/HIT";
 import Keyfeature from "./Components/KeyFeature/Keyfeature";
 import Paid from "./Components/Paid/Paid";
+// import "animate.css";
 
 function App() {
   return (

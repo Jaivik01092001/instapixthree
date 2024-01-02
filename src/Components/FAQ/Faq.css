@@ -60,7 +60,15 @@
   position: absolute;
   background: var(--primarycolor);
 } */
-.faqquestioncontainer.open {
+
+.faqquestioncontainer {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+  max-height: 6rem;
+}
+
+.faqquestioncontainer[open] {
+  max-height: 20rem; /* Adjust the maximum height based on your content */
   background-color: #00ff00; /* Green color - you can change this to your preferred color */
 }
 
@@ -80,5 +88,15 @@
   }
   .faqquestions {
     padding-top: 2rem;
+  }
+  .faqquestioncontainer {
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+    max-height: 11rem;
+  }
+
+  .faqquestioncontainer[open] {
+    max-height: 50rem; /* Adjust the maximum height based on your content */
+    background-color: #00ff00; /* Green color - you can change this to your preferred color */
   }
 }

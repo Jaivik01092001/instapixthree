@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Faq.css";
+import { motion } from "framer-motion";
 
 const Faq = () => {
   const [isOpen1, setIsOpen1] = useState(false);
@@ -40,15 +41,22 @@ const Faq = () => {
     <>
       <div className="faqcontainer" id="faq">
         <div className="faqbg">
-          <div className="faqtitle">
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 2, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="faqtitle "
+          >
             Find the Answers On Frequently Asked Questions
-          </div>
+          </motion.div>
           <div className="faqquestions">
             <div className="space-y-20">
               {/* 1st */}
               <details
                 style={{
                   backgroundColor: isOpen1 ? "#298B00" : "black",
+
                   // add other styles as needed
                 }}
                 className={`group p-6 dark:bg-gray-900 [&_summary::-webkit-details-marker]:hidden faqquestioncontainer`}

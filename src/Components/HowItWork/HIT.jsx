@@ -4,14 +4,22 @@ import hitmockup from "../../Assets/mokupHowItWork.png";
 import find from "../../Assets/findphotographer.png";
 import book from "../../Assets/bookphotographer.png";
 import hdr from "../../Assets/receivehdrphoto.png";
-
 import arrow from "../../Assets/arrow.png";
+import { motion } from "framer-motion";
 
 const HIT = () => {
   return (
     <>
       <div className="hitcontainer" id="ourworks">
-        <div className="hittop">How It Works</div>
+        <motion.div
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 3, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="hittop"
+        >
+          How It Works
+        </motion.div>
         <div className="hitbottom flex flex-col  ">
           <div className="flex contentcontainer">
             <div className="leftmockup ">
@@ -23,7 +31,7 @@ const HIT = () => {
                 <div className="imgiconone">
                   <img className="imgiconset" src={find} alt="" />
                 </div>
-                <div className="hittitle">Find Photographers</div>
+                <div className="hittitle ani">Find Photographers</div>
                 <div className="hitdesc">
                   Search our nation wide marketplace of qualified real estate
                   photographerscusing our ai powered capture and editing

@@ -29,16 +29,24 @@ const Header = () => {
                   {/* ... your navigation links here ... */}
 
                   <a href="#home">
-                    <li className="navli">Home</li>
+                    <li className="navli hover:text-green-500 hover:duration-300 hover:ease-in-out">
+                      Home
+                    </li>
                   </a>
                   <a href="#ourworks">
-                    <li className="navli">Our Works</li>
+                    <li className="navli hover:text-green-500 hover:duration-300 hover:ease-in-out">
+                      Our Works
+                    </li>
                   </a>
                   <a href="#features">
-                    <li className="navli">Features</li>
+                    <li className="navli hover:text-green-500 hover:duration-300 hover:ease-in-out">
+                      Features
+                    </li>
                   </a>
                   <a href="#faq">
-                    <li className="navli">FAQ</li>
+                    <li className="navli hover:text-green-500 hover:duration-300 hover:ease-in-out">
+                      FAQ
+                    </li>
                   </a>
 
                   {/* ... other mobile menu items ... */}

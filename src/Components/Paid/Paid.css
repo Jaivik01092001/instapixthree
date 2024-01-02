@@ -26,6 +26,11 @@
   justify-content: space-around;
   padding-top: 5rem;
 }
+.waterimage {
+  background-image: url("../../Assets/watereffect.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
 .paidright {
   width: 39%;
   color: #fefeff;
@@ -103,5 +108,9 @@
   .downloadbuttong {
     width: 90%;
     margin: auto;
+  }
+  .waterimage {
+    flex-direction: column;
+    background-position: center;
   }
 }

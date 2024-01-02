@@ -6,21 +6,34 @@ import insta from "../../Assets/Instagram.png";
 import facebook from "../../Assets/Facebook.png";
 import twitter from "../../Assets/Twiter.png";
 import linkedin from "../../Assets/Vector.png";
+import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
     <>
       <div className="footercontainer" id="footer">
         <div className="footerrowone flex">
-          <div className="frcoloumnone">
-            <div className="ltalkparent">
+          <div className="frcoloumnone ">
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="ltalkparent "
+            >
               <div className="ltalktitle">Let’s Talk</div>
               <div className="ltalkdesc">
                 Send us an email or start a conversation by filling the form
                 below.
               </div>
-            </div>
-            <div className="richusdirectlyparent">
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, x: -100 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="richusdirectlyparent "
+            >
               <div className="richtitle">Reach us directly!</div>
               <div className="richemail flex">
                 <div className="emailleft">
@@ -40,11 +53,17 @@ const Footer = () => {
                   <div className="phoneno">1-677-124-44227</div>
                 </div>
               </div>
-            </div>
+            </motion.div>
             <div className="my-16">
               <hr />
             </div>
-            <div className="socialparent">
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 4, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="socialparent "
+            >
               <div className="followtitle">Follow Us :</div>
               <div className="followicon gap-12 flex">
                 <div className="insta">
@@ -60,9 +79,15 @@ const Footer = () => {
                   <img src={linkedin} alt="" />
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
-          <div className="frcoloumntwo p-8">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="frcoloumntwo p-8 "
+          >
             <div className="nameemail flex">
               <div className="name flex flex-col">
                 <label htmlFor="fullname ">
@@ -121,19 +146,25 @@ const Footer = () => {
             <div className="sendbtn">
               <button className="sendtext">Send Message</button>
             </div>
-          </div>
+          </motion.div>
         </div>
         <div className="hr m-auto my-16">
           <hr />
         </div>
-        <div className="footerrowtwo flex justify-between m-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="footerrowtwo flex justify-between m-auto "
+        >
           <div className="copy">Listing pix © 2022. All rights reserved </div>
           <div className="cookie">
             Cookies &nbsp;&nbsp; / &nbsp;&nbsp;Contact Sales
             &nbsp;&nbsp;/&nbsp;&nbsp;Security&nbsp;&nbsp; /&nbsp;&nbsp; Terms of
             Service &nbsp;&nbsp;/&nbsp;&nbsp; Privacy Statement&nbsp;&nbsp;
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );
