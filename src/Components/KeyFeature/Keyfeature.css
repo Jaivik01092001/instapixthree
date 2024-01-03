@@ -45,7 +45,6 @@
   margin-top: 5rem;
 }
 .keyfeatureleft {
-  background-color: #4bb01f;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
@@ -53,6 +52,9 @@
   align-items: center;
   padding: 3rem 2rem;
   width: 50%;
+}
+.keyfeatureleft:hover {
+  background-color: #4bb01f;
 }
 
 .kfbltitle {
@@ -89,15 +91,16 @@
   margin-top: 1.5rem;
 }
 .keyfeatureright {
-  background-color: transparent;
   border-radius: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 3rem 0;
-  padding-left: 8rem;
   width: 50%;
+}
+.keyfeatureright:hover {
+  background-color: #4bb01f;
 }
 /* .kfmockup {
   width: 50%;
@@ -145,7 +148,6 @@
     align-items: center;
   }
   .keyfeatureleft {
-    background-color: #4bb01f;
     border-radius: 2rem;
     display: flex;
     flex-direction: column;

@@ -16,7 +16,7 @@ const Paid = () => {
               <div className="paidleft ">
                 <motion.img
                   initial={{ opacity: 0, x: -100 }}
-                  animate={{ opacity: 1, x: 0 }}
+                  whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 1, ease: "easeOut" }}
                   viewport={{ once: true }}
                   className="br"
@@ -26,7 +26,7 @@ const Paid = () => {
               </div>
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
-                animate={{ opacity: 1, x: 0 }}
+                whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1, ease: "easeOut" }}
                 viewport={{ once: true }}
                 className="paidright"

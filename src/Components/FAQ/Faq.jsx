@@ -43,10 +43,10 @@ const Faq = () => {
         <div className="faqbg">
           <motion.div
             initial={{ opacity: 0, y: -50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 2, ease: "easeOut" }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: "easeIn" }}
             viewport={{ once: true }}
-            className="faqtitle "
+            className="faqtitle"
           >
             Find the Answers On Frequently Asked Questions
           </motion.div>

@@ -12,7 +12,7 @@ const Keyfeature = () => {
       <div className="top">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="keyfeaturetop"
@@ -22,7 +22,7 @@ const Keyfeature = () => {
         <div className="keyfeaturebottom flex">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="keyfeatureleft "
@@ -35,7 +35,7 @@ const Keyfeature = () => {
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="keyfeatureright "
@@ -59,7 +59,7 @@ const Keyfeature = () => {
         <div className="twomobileimages  flex justify-center">
           <motion.img
             initial={{ opacity: 0, x: -100, y: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="transformimg"
@@ -68,7 +68,7 @@ const Keyfeature = () => {
           />
           <motion.img
             initial={{ opacity: 0, x: 100, y: 50 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="transformimg"
@@ -77,7 +77,7 @@ const Keyfeature = () => {
           />
           <motion.img
             initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            whileInView={{ opacity: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="absolute "

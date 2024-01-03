@@ -16,7 +16,7 @@ const Footer = () => {
           <div className="frcoloumnone ">
             <motion.div
               initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
               className="ltalkparent "
@@ -29,7 +29,7 @@ const Footer = () => {
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: -100 }}
-              animate={{ opacity: 1, x: 0 }}
+              whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
               className="richusdirectlyparent "
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             <motion.div
               initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
+              whileInView={{ opacity: 1 }}
               transition={{ duration: 4, ease: "easeOut" }}
               viewport={{ once: true }}
               className="socialparent "
@@ -83,7 +83,7 @@ const Footer = () => {
           </div>
           <motion.div
             initial={{ opacity: 0, x: 100 }}
-            animate={{ opacity: 1, x: 0 }}
+            whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
             className="frcoloumntwo p-8 "
@@ -153,7 +153,7 @@ const Footer = () => {
         </div>
         <motion.div
           initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="footerrowtwo flex justify-between m-auto "
