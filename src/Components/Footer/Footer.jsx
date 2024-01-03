@@ -60,7 +60,7 @@ const Footer = () => {
             <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ duration: 4, ease: "easeOut" }}
+              transition={{ duration: 1, ease: "easeOut" }}
               viewport={{ once: true }}
               className="socialparent "
             >

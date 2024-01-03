@@ -12,8 +12,8 @@ const HIT = () => {
     <>
       <div className="hitcontainer" id="ourworks">
         <motion.div
-          initial={{ opacity: 0, y: -100 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, x: 100 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
           viewport={{ once: true }}
           className="hittop"
@@ -23,11 +23,25 @@ const HIT = () => {
         <div className="hitbottom flex flex-col  ">
           <div className="flex contentcontainer">
             <div className="leftmockup ">
-              <img className="leftmockupimg" src={hitmockup} alt="" />
+              <motion.img
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="leftmockupimg"
+                src={hitmockup}
+                alt=""
+              />
             </div>
 
             <div className="righthit">
-              <div className="righthitone">
+              <motion.div
+                initial={{ opacity: 0, x: 100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="righthitone"
+              >
                 <div className="imgiconone">
                   <img className="imgiconset" src={find} alt="" />
                 </div>
@@ -41,12 +55,18 @@ const HIT = () => {
                   <div className="ctatext">Get Started</div>
                   <img className="ml-4" src={arrow} alt="" />
                 </div>
-              </div>
+              </motion.div>
             </div>
           </div>
 
           <div className="righthitsecond">
-            <div className="righthitone">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="righthitone"
+            >
               <div className="imgicontwo">
                 <img className="imgiconset" src={book} alt="" />
               </div>
@@ -58,10 +78,16 @@ const HIT = () => {
                 <div className="ctatext">Get Started</div>
                 <img className="ml-4 object-contain" src={arrow} alt="" />
               </div>
-            </div>
+            </motion.div>
           </div>
           <div className="righthitthird">
-            <div className="righthitone">
+            <motion.div
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 1, ease: "easeOut" }}
+              viewport={{ once: true }}
+              className="righthitone"
+            >
               <div className="imgiconthree">
                 <img className="imgiconset" src={hdr} alt="" />
               </div>
@@ -75,7 +101,7 @@ const HIT = () => {
                 <div className="ctatext">Get Started</div>
                 <img className="ml-4 object-contain" src={arrow} alt="" />
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
