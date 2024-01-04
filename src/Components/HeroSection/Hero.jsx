@@ -56,9 +56,9 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="herobottom">
+        <div className="herobottom overflow-x-hidden">
           {/* <img className="iphoneimg" src={iphone} alt="" /> */}
-          <div className="mainherimgiphone flex overflow-x-hidden">
+          <div className="mainherimgiphone flex">
             <motion.img
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 40 }}
