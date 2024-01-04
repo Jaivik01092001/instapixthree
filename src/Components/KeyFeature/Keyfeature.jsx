@@ -56,7 +56,7 @@ const Keyfeature = () => {
           src={kfmockup}
           alt=""
         /> */}
-        <div className="twomobileimages  flex justify-center overflow-x-hidden">
+        <div className="twomobileimages  flex justify-center overflow-visible">
           <motion.img
             initial={{ opacity: 0, x: -100, y: 50 }}
             whileInView={{ opacity: 1, x: 0 }}

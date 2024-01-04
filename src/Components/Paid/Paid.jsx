@@ -12,7 +12,7 @@ const Paid = () => {
       <div className="paidcontainer">
         <div className="getpaidvector">
           <div className="greenbgimage ">
-            <div className="flex waterimage">
+            <div className="flex waterimage overflow-x-hidden">
               <div className="paidleft ">
                 <motion.img
                   initial={{ opacity: 0, x: -100 }}

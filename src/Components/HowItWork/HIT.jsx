@@ -82,7 +82,7 @@ const HIT = () => {
               </div>
             </motion.div>
           </div>
-          <div className="righthitthird overflow-x-hidden">
+          <div className="righthitthird overflow-hidden">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
