@@ -19,7 +19,7 @@ const Keyfeature = () => {
         >
           Key features of user
         </motion.div>
-        <div className="keyfeaturebottom flex">
+        <div className="keyfeaturebottom flex overflow-x-hidden">
           <motion.div
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -56,7 +56,7 @@ const Keyfeature = () => {
           src={kfmockup}
           alt=""
         /> */}
-        <div className="twomobileimages  flex justify-center">
+        <div className="twomobileimages  flex justify-center overflow-x-hidden">
           <motion.img
             initial={{ opacity: 0, x: -100, y: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
