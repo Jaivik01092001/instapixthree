@@ -14,7 +14,7 @@ function App() {
       <Hero />
       <HIT />
       <Faq />
-      <Keyfeature />
+      {/* <Keyfeature /> */}
       <Paid />
       <Footer />
     </>
