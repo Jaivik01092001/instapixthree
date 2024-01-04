@@ -56,9 +56,9 @@ const Keyfeature = () => {
           src={kfmockup}
           alt=""
         /> */}
-        <div className="twomobileimages  flex justify-center overflow-visible">
+        <div className="twomobileimages  flex justify-center ">
           <motion.img
-            initial={{ opacity: 0, x: -100, y: 50 }}
+            initial={{ opacity: 0, x: -100, y: 10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
@@ -66,8 +66,9 @@ const Keyfeature = () => {
             src={kfleftmobile}
             alt=""
           />
+
           <motion.img
-            initial={{ opacity: 0, x: 100, y: 50 }}
+            initial={{ opacity: 0, x: 100, y: 10 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, ease: "easeOut" }}
             viewport={{ once: true }}
@@ -75,6 +76,7 @@ const Keyfeature = () => {
             src={kfrightmobile}
             alt=""
           />
+
           <motion.img
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
