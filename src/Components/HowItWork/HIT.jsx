@@ -11,18 +11,20 @@ const HIT = () => {
   return (
     <>
       <div className="hitcontainer" id="ourworks">
-        <motion.div
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="hittop"
-        >
-          How It Works
-        </motion.div>
+        <div className="overflow-x-hidden">
+          <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="hittop"
+          >
+            How It Works
+          </motion.div>
+        </div>
         <div className="hitbottom flex flex-col  ">
           <div className="flex contentcontainer">
-            <div className="leftmockup ">
+            <div className="leftmockup overflow-x-hidden">
               <motion.img
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -34,7 +36,7 @@ const HIT = () => {
               />
             </div>
 
-            <div className="righthit">
+            <div className="righthit overflow-x-hidden">
               <motion.div
                 initial={{ opacity: 0, x: 100 }}
                 whileInView={{ opacity: 1, x: 0 }}
@@ -59,7 +61,7 @@ const HIT = () => {
             </div>
           </div>
 
-          <div className="righthitsecond">
+          <div className="righthitsecond overflow-x-hidden">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -80,7 +82,7 @@ const HIT = () => {
               </div>
             </motion.div>
           </div>
-          <div className="righthitthird">
+          <div className="righthitthird overflow-x-hidden">
             <motion.div
               initial={{ opacity: 0, x: 100 }}
               whileInView={{ opacity: 1, x: 0 }}
