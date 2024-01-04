@@ -35,7 +35,7 @@ const Hero = () => {
             High-end digital experiences. Created at the heart of <br />{" "}
             Manhattan, we are a human-sized team.
           </motion.div>
-          <div className="downloadbutton flex">
+          <div className="downloadbutton flex overflow-x-hidden">
             <motion.img
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -58,7 +58,7 @@ const Hero = () => {
         </div>
         <div className="herobottom">
           {/* <img className="iphoneimg" src={iphone} alt="" /> */}
-          <div className="mainherimgiphone flex">
+          <div className="mainherimgiphone flex overflow-x-hidden">
             <motion.img
               initial={{ opacity: 0, x: -100 }}
               whileInView={{ opacity: 1, x: 40 }}
