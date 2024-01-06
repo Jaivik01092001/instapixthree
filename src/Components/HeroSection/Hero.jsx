@@ -14,12 +14,45 @@ import eclipsetwo from "../../Assets/eclipse/Ellipse-2.png";
 // import eclipsethree from "../../Assets/eclipse/Ellipse.png";
 
 const Hero = () => {
+  const animationVariants = {
+    up: { y: -20 },
+    down: { y: 20 },
+  };
+
+  const animationOptions = {
+    duration: 1, // You can adjust the duration
+    ease: "linear",
+    repeat: Infinity,
+    repeatType: "reverse",
+  };
+
   return (
     <>
       <div className="eclipse absolute w-full overflow-hidden">
-        <img className="eone" src={eclipseone} alt="" />
-        <img className="etwo" src={eclipsetwo} alt="" />
-        <img className="ethree" src={eclipsetwo} alt="" />
+        <motion.img
+          className="eone"
+          src={eclipseone}
+          alt=""
+          variants={animationVariants}
+          animate="up"
+          transition={animationOptions}
+        />
+        <motion.img
+          className="etwo"
+          src={eclipsetwo}
+          alt=""
+          variants={animationVariants}
+          animate="down"
+          transition={animationOptions}
+        />
+        <motion.img
+          className="ethree"
+          src={eclipsetwo}
+          alt=""
+          variants={animationVariants}
+          animate="up"
+          transition={animationOptions}
+        />
       </div>
       <div className="heroseccontainer">
         <div className="herotop">
