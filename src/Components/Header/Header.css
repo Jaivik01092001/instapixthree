@@ -5,6 +5,8 @@
   height: 11.2rem;
   background-color: #101110;
   font-family: "font-family-syne";
+  z-index: 1;
+  position: relative;
 }
 .hcontentheight {
   height: 11.2rem;

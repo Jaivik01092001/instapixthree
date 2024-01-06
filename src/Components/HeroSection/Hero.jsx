@@ -9,10 +9,18 @@ import firstiphone3 from "../../Assets/firstiphone3.svg";
 import firstiphone4 from "../../Assets/firstiphone4.svg";
 import firstiphone5 from "../../Assets/firstiphone5.svg";
 import { motion } from "framer-motion";
+import eclipseone from "../../Assets/eclipse/Ellipse-1.png";
+import eclipsetwo from "../../Assets/eclipse/Ellipse-2.png";
+// import eclipsethree from "../../Assets/eclipse/Ellipse.png";
 
 const Hero = () => {
   return (
     <>
+      <div className="eclipse absolute w-full overflow-hidden">
+        <img className="eone" src={eclipseone} alt="" />
+        <img className="etwo" src={eclipsetwo} alt="" />
+        <img className="ethree" src={eclipsetwo} alt="" />
+      </div>
       <div className="heroseccontainer">
         <div className="herotop">
           <motion.div
