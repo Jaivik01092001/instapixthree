@@ -17,12 +17,17 @@
   ); /* Set the gradient from white to gray horizontally */
   -webkit-background-clip: text; /* Clip the background to the text */
   color: transparent;
+  opacity: 1;
+  transform: none;
+  width: fit-content;
+  margin: auto;
+  border-bottom: 1px gray solid;
 }
 .leftmockupimg {
   background-size: contain;
   width: 20%;
   margin-left: 33rem;
-  margin-top: 12rem;
+  margin-top: 8rem;
   position: absolute;
 }
 .righthit {

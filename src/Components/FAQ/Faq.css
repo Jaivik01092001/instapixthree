@@ -1,6 +1,6 @@
 .faqcontainer {
   background-color: var(--primarycolor);
-  padding: 5rem 0rem;
+  /* padding: 5rem 0rem; */
 }
 .faqbg {
   background-image: url("../../Assets/faqbg.png");
@@ -8,6 +8,7 @@
   background-position: center;
   height: 100%;
   background-size: cover;
+  padding: 5rem 0rem;
 }
 .faqtitle {
   font-family: Syne;

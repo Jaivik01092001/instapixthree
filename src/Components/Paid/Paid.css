@@ -30,6 +30,7 @@
   background-image: url("../../Assets/watereffect.svg");
   background-size: contain;
   background-repeat: no-repeat;
+  align-items: center;
 }
 .paidright {
   width: 39%;

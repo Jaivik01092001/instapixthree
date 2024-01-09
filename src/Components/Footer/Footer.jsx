@@ -9,6 +9,7 @@ import linkedin from "../../Assets/Vector.png";
 import { motion } from "framer-motion";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <div className="footercontainer" id="footer">
@@ -160,7 +161,9 @@ const Footer = () => {
           viewport={{ once: true }}
           className="footerrowtwo flex justify-between m-auto "
         >
-          <div className="copy">Listing pix © 2022. All rights reserved </div>
+          <div className="copy">
+            Listing pix © {currentYear}. All rights reserved{" "}
+          </div>
           <div className="cookie">
             Cookies &nbsp;&nbsp; / &nbsp;&nbsp;Contact Sales
             &nbsp;&nbsp;/&nbsp;&nbsp;Security&nbsp;&nbsp; /&nbsp;&nbsp; Terms of
