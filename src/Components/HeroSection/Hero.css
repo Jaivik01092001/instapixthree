@@ -137,4 +137,13 @@
     left: 63%;
     width: 57%;
   }
+  .herotop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    z-index: 0;
+  }
 }

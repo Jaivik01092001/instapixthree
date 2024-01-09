@@ -62,17 +62,26 @@
   background: var(--primarycolor);
 } */
 
-.faqquestioncontainer {
+/* .faqquestioncontainer {
   overflow: hidden;
-  transition: max-height 0.5s ease-in-out; /* Adjust the duration and timing function as needed */
+  transition: max-height 0.5s ease-in-out;
   max-height: 6rem;
 }
 
 .faqquestioncontainer[open] {
-  max-height: 20rem; /* Adjust the maximum height based on your content */
-  background-color: #00ff00; /* Green color - you can change this to your preferred color */
+  max-height: 20rem;
+  background-color: #00ff00;
+} */
+.faqquestioncontainer {
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  max-height: 6rem;
 }
 
+.faqquestioncontainer[open] {
+  max-height: 20rem;
+  background-color: #00ff00;
+}
 @media (max-width: 768px) {
   .faqcontainer {
     background-color: var(--primarycolor);

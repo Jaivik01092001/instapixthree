@@ -153,6 +153,7 @@
     margin: auto;
     margin: auto;
     position: relative;
+    display: none;
   }
   .contentcontainer {
     flex-direction: column;
