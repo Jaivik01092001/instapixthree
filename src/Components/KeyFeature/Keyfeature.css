@@ -52,6 +52,7 @@
   align-items: center;
   padding: 3rem 2rem;
   width: 50%;
+  cursor: pointer;
 }
 .keyfeatureleft:hover {
   background-color: #4bb01f;
@@ -98,6 +99,7 @@
   align-items: center;
   padding: 3rem 0;
   width: 50%;
+  cursor: pointer;
 }
 .keyfeatureright:hover {
   background-color: #4bb01f;

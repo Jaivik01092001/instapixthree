@@ -20,67 +20,69 @@ const Keyfeature = () => {
       case "bookedPhotographer":
         return (
           <>
-            {" "}
-            <motion.img
-              initial={{ opacity: 0, x: -100, y: 10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="transformimg"
-              src={kfleftmobile}
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, x: 100, y: 10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="transformimg"
-              src={kfrightmobile}
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="absolute "
-              src={kfmiddlemobile}
-              alt=""
-            />
+            <div className="twomobileimages  flex justify-center ">
+              <motion.img
+                initial={{ opacity: 0, x: -100, y: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="transformimg"
+                src={kfleftmobile}
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0, x: 100, y: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="transformimg"
+                src={kfrightmobile}
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="absolute "
+                src={kfmiddlemobile}
+                alt=""
+              />
+            </div>
           </>
         );
       case "searchedPhotographer":
         return (
           <>
-            {" "}
-            <motion.img
-              initial={{ opacity: 0, x: -100, y: 10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="transformimg"
-              src={kfleftmobile}
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0, x: 100, y: 10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="transformimg"
-              src={kfrightmobile}
-              alt=""
-            />
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ duration: 1, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className="absolute "
-              src={kfmiddlemobile}
-              alt=""
-            />
+            <div className="twomobileimages  flex justify-center ">
+              <motion.img
+                initial={{ opacity: 0, x: -100, y: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="transformimg"
+                src={kfleftmobile}
+                alt=""
+              />
+              <motion.img
+                initial={{ opacity: 0, x: 100, y: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="transformimg"
+                src={kfrightmobile}
+                alt=""
+              />
+              {/* <motion.img
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1, ease: "easeOut" }}
+                viewport={{ once: true }}
+                className="absolute "
+                src={kfmiddlemobile}
+                alt=""
+              /> */}
+            </div>
           </>
         );
     }
@@ -164,16 +166,7 @@ const Keyfeature = () => {
           </motion.div>
         </div>
       </div>
-      <div className="bottom kfmockup">
-        {/* <img
-          className="kfmockup "
-          src={kfmockup}
-          alt=""
-        /> */}
-        <div className="twomobileimages  flex justify-center ">
-          {renderComponent()}
-        </div>
-      </div>
+      <div className="bottom kfmockup">{renderComponent()}</div>
     </div>
   );
 };

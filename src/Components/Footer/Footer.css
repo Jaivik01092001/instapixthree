@@ -125,6 +125,7 @@ input {
 }
 .nameemail {
   justify-content: space-between;
+  gap: 1rem;
 }
 .phonesubject {
   justify-content: space-between;
