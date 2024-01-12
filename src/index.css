@@ -37,3 +37,17 @@ body {
 body::-webkit-scrollbar {
   display: none;
 }
+
+/* For modern browsers */
+img {
+  user-drag: none;
+  user-select: none;
+}
+
+/* For older browsers */
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}

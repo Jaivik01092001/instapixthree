@@ -1,24 +1,43 @@
 .heroseccontainer {
   background-color: var(--primarycolor);
   padding: 3.5rem 0rem;
-  justify-content: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 11.2rem);
+  /* height: 200vh; */
 }
 .eone {
   position: relative;
-  left: 87%;
-  bottom: 20vh;
+  left: 75%;
+  bottom: -28vh;
+  width: 20%;
 }
 .etwo {
   position: relative;
-  bottom: 32vh;
-  width: 18%;
-  left: -5%;
+  bottom: 45vh;
+  width: 22%;
+  left: 7%;
 }
 .ethree {
   position: relative;
-  bottom: 40vh;
-  width: 30%;
-  left: 75%;
+  width: 75%;
+  bottom: 118vh;
+  left: 19%;
+  z-index: 0;
+}
+.videocourse {
+  width: 65%;
+  right: 70%;
+  top: 60%;
+}
+.tutors {
+  width: 58%;
+  left: 38%;
+  top: 10%;
+}
+.course {
+  width: 50%;
+  left: 60%;
+  top: 35%;
 }
 .heroleft {
   display: flex;
@@ -30,16 +49,17 @@
   margin-top: 0;
   margin-bottom: 0rem;
   margin-left: 0;
-  width: 42%;
+  width: 35%;
   margin-right: 0;
+  padding-bottom: 8rem;
 }
 
 .herotitle {
   font-family: var(--font-family-syne);
   color: var(--headingcolor);
-  font-size: 5.1rem;
+  font-size: 4rem;
   font-weight: 700;
-  line-height: 6.5rem;
+  line-height: 5rem;
   letter-spacing: 0em;
   background: -webkit-linear-gradient(
     #ffffff 0%,
@@ -47,6 +67,7 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-transform: capitalize;
 }
 .herodescription {
   font-family: var(--font-family-nunito);
@@ -100,11 +121,16 @@
   z-index: 1;
 }
 .heroimgwidth {
-  width: 78%;
+  position: relative;
+  bottom: 35%;
+  width: 70%;
+  margin-right: 5rem;
+  /* margin-top: 8rem; */
 }
 @media (max-width: 768px) {
   .heroseccontainer {
     flex-direction: column;
+    height: 100%;
   }
   .herotitle {
     width: 90%;
@@ -140,13 +166,15 @@
   }
   .eone {
     position: relative;
-    left: 69%;
-    bottom: 25vh;
+    left: 0%;
+    bottom: 0vh;
+    display: none;
   }
   .etwo {
     position: relative;
     bottom: 29vh;
     width: 40%;
+    display: none;
   }
   .ethree {
     position: relative;
@@ -163,8 +191,12 @@
     position: relative;
     z-index: 0;
     width: 100%;
+    padding-bottom: 0;
   }
-  .heroright {
-    margin-top: 3rem;
+  .heroright,
+  .tutors,
+  .course,
+  .heroimgwidth {
+    display: none;
   }
 }

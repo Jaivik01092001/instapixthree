@@ -15,14 +15,14 @@ function App() {
     <>
       <Header />
       <Hero />
-      <Keyfeature />
-      <NetworkofPhotographer />
+      <HIT />
       <Featureofinstapix />
+      <Pricing />
       <Faq />
-      <Paid />
       <Footer />
-      {/* <Pricing />
-      <HIT /> */}
+      {/* <Keyfeature />
+      <NetworkofPhotographer />
+      <Paid /> */}
     </>
   );
 }

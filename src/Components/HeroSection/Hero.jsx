@@ -4,15 +4,24 @@ import appstore from "../../Assets/App Store.png";
 import playstore from "../../Assets/Play Store.png";
 // import iphone from "../../Assets/Iphonemockup.png";
 import { motion } from "framer-motion";
-import eclipseone from "../../Assets/eclipse/Ellipse-1.png";
-import eclipsetwo from "../../Assets/eclipse/Ellipse-2.png";
+import spiral1 from "../../Assets/3rddesign/spiral.svg";
+import spiral2 from "../../Assets/3rddesign/spiral.svg";
 import heroimg from "../../Assets/2nd design assets/heroimg.svg";
+import bluecircle from "../../Assets/3rddesign/Listing PIX/Mask Group.svg";
+import iphone from "../../Assets/3rddesign/Image.svg";
 // import eclipsethree from "../../Assets/eclipse/Ellipse.png";
+import video from "../../Assets/3rddesign/23video.svg";
+import tutor from "../../Assets/3rddesign/250+tutors.svg";
+import course from "../../Assets/3rddesign/course.svg";
 
 const Hero = () => {
   const animationVariants = {
-    up: { y: -20 },
-    down: { y: 20 },
+    up: { y: -15 },
+    down: { y: 15 },
+  };
+  const animationvariantcircle = {
+    up: { x: -25 },
+    down: { x: 25 },
   };
 
   const animationOptions = {
@@ -26,7 +35,17 @@ const Hero = () => {
     <>
       <div className="overflow-hidden">
         <div className="eclipse absolute w-full overflow-hidden">
+          <img className="eone" src={spiral1} alt="" />
+          <img className="etwo" src={spiral2} alt="" />
           <motion.img
+            variants={animationvariantcircle}
+            animate="up"
+            transition={animationOptions}
+            className="ethree"
+            src={bluecircle}
+            alt=""
+          />
+          {/* <motion.img
             className="eone"
             src={eclipseone}
             alt=""
@@ -49,7 +68,7 @@ const Hero = () => {
             variants={animationVariants}
             animate="up"
             transition={animationOptions}
-          />
+          /> */}
         </div>
         <div className="heroseccontainer flex">
           <div className="heroleft">
@@ -94,14 +113,39 @@ const Hero = () => {
               />
             </div>
           </div>
-          <div className="heroright">
+          <div className="heroright flex flex-col">
+            <motion.img
+              variants={animationVariants}
+              animate="up"
+              transition={animationOptions}
+              className="videocourse relative"
+              src={video}
+              alt=""
+            />
+            <motion.img
+              variants={animationVariants}
+              animate="up"
+              transition={animationOptions}
+              className="tutors relative"
+              src={tutor}
+              alt=""
+            />
+            <motion.img
+              variants={animationVariants}
+              animate="up"
+              transition={animationOptions}
+              className="course relative"
+              src={course}
+              alt=""
+            />
+
             <motion.img
               initial={{ opacity: 0, scale: 0 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 2, ease: "easeOut" }}
               viewport={{ once: true }}
               className="heroimgwidth"
-              src={heroimg}
+              src={iphone}
               alt=""
             />
           </div>
