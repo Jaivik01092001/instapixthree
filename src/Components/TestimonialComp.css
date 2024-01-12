@@ -1,0 +1,39 @@
+.testimoniacardbody {
+  background-color: #1c1d1f;
+  width: fit-content;
+  border-radius: 4rem;
+  padding: 2.5rem 10rem 2.5rem 2.5rem;
+}
+
+.userimageset {
+  max-width: 30%;
+  margin-bottom: 1rem;
+}
+.username {
+  font-family: Syne;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+.userprofession {
+  font-family: Syne;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.userlocation {
+  font-family: Syne;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.ratingimgset {
+  max-width: 75%;
+}

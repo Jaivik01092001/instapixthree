@@ -1,6 +1,7 @@
 .heroseccontainer {
   background-color: var(--primarycolor);
   padding: 3.5rem 0rem;
+  justify-content: center;
 }
 .eone {
   position: relative;
@@ -9,22 +10,28 @@
 }
 .etwo {
   position: relative;
-  bottom: 37vh;
-  width: 20%;
+  bottom: 32vh;
+  width: 18%;
+  left: -5%;
 }
 .ethree {
   position: relative;
-  bottom: 50vh;
-  left: 84%;
+  bottom: 40vh;
+  width: 30%;
+  left: 75%;
 }
-.herotop {
+.heroleft {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin: auto;
   position: relative;
   z-index: 2;
+  margin-top: 0;
+  margin-bottom: 0rem;
+  margin-left: 0;
+  width: 42%;
+  margin-right: 0;
 }
 
 .herotitle {
@@ -34,7 +41,6 @@
   font-weight: 700;
   line-height: 6.5rem;
   letter-spacing: 0em;
-  text-align: center;
   background: -webkit-linear-gradient(
     #ffffff 0%,
     rgba(255, 255, 255, 0) 230.63%
@@ -48,12 +54,11 @@
   font-weight: 400;
   line-height: 3.1rem;
   letter-spacing: 0em;
-  text-align: center;
   color: #7c7c7c;
   margin: 1.5rem 0rem;
 }
 .downloadbutton {
-  width: 22%;
+  width: 55%;
   display: flex;
   justify-content: space-between;
 }
@@ -88,8 +93,19 @@
   transform: translate(-7.5rem);
   z-index: -2;
 }
-
+.heroright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+.heroimgwidth {
+  width: 78%;
+}
 @media (max-width: 768px) {
+  .heroseccontainer {
+    flex-direction: column;
+  }
   .herotitle {
     width: 90%;
     font-size: 2.9rem;
@@ -101,6 +117,7 @@
     font-size: 2rem;
     line-height: 3rem;
     width: 90%;
+    text-align: center;
   }
   .downloadbutton {
     width: 75%;
@@ -137,7 +154,7 @@
     left: 63%;
     width: 57%;
   }
-  .herotop {
+  .heroleft {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,5 +162,9 @@
     margin: auto;
     position: relative;
     z-index: 0;
+    width: 100%;
+  }
+  .heroright {
+    margin-top: 3rem;
   }
 }

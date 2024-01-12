@@ -1,8 +1,8 @@
 .paidcontainer {
-  background-color: #101110;
+  background-color: #1c1c1e;
 }
 .getpaidvector {
-  background-image: url("../../Assets/getpaidvector.png");
+  /* background-image: url("../../Assets/getpaidvector.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

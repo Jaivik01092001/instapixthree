@@ -1,173 +1,79 @@
 import React from "react";
-import "./Keyfeature.css";
-// import kfmockup from "../../Assets/kfmockup.png";
-import kfleftmobile from "../../Assets/kfleftsvg.svg";
-import kfrightmobile from "../../Assets/kfrightsvg.svg";
-import kfmiddlemobile from "../../Assets/kfmiddlesvg.svg";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import "./Keyfeature.css";
+import cardimage from "../../Assets/2nd design assets/card image.svg";
 
 const Keyfeature = () => {
-  const [selectedOption, setSelectedOption] = useState("bookedPhotographer");
+  const cardData = [
+    {
+      title: "Find Photographers",
+      description:
+        "Search our nationwide marketplace of qualified real estate photographers using our AI-powered capture and editing solution.",
+      imageSrc: cardimage,
+    },
+    {
+      title: "Book Photographers",
+      description:
+        "Instantly book an appointment with your desired photographer.",
+      imageSrc: cardimage,
+    },
+    {
+      title: "Received HDR Photos",
+      description:
+        "With our fast, efficient service, photos are delivered on-site, saving time and money while showcasing the property in the best possible light.",
+      imageSrc: cardimage,
+    },
+    // Add more card data as needed
+  ];
 
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
+  const kfVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
   };
 
-  const renderComponent = () => {
-    // eslint-disable-next-line default-case
-    switch (selectedOption) {
-      case "bookedPhotographer":
-        return (
-          <>
-            <div className="twomobileimages  flex justify-center ">
-              <motion.img
-                initial={{ opacity: 0, x: -100, y: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="transformimg"
-                src={kfleftmobile}
-                alt=""
-              />
-              <motion.img
-                initial={{ opacity: 0, x: 100, y: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="transformimg"
-                src={kfrightmobile}
-                alt=""
-              />
-              <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="absolute "
-                src={kfmiddlemobile}
-                alt=""
-              />
-            </div>
-          </>
-        );
-      case "searchedPhotographer":
-        return (
-          <>
-            <div className="twomobileimages  flex justify-center ">
-              <motion.img
-                initial={{ opacity: 0, x: -100, y: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="transformimg"
-                src={kfleftmobile}
-                alt=""
-              />
-              <motion.img
-                initial={{ opacity: 0, x: 100, y: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="transformimg"
-                src={kfrightmobile}
-                alt=""
-              />
-              {/* <motion.img
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 1, ease: "easeOut" }}
-                viewport={{ once: true }}
-                className="absolute "
-                src={kfmiddlemobile}
-                alt=""
-              /> */}
-            </div>
-          </>
-        );
-    }
+  const cardVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: { opacity: 1, y: 0 },
+    hover: { scale: 1.1, transition: { duration: 0.4 } },
   };
+
   return (
-    <div className="keyfeaturecontainer" id="features">
-      <div className="top">
-        <motion.div
-          initial={{ opacity: 0, y: -50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="keyfeaturetop"
-        >
-          Key features of user
-        </motion.div>
-        <div className="keyfeaturebottom flex overflow-x-hidden">
+    <div className="keyfeaturecontainer overflow-hidden">
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="kfleft"
+      >
+        <div className="servicetitle uppercase">Services</div>
+        <div className="kftitle capitalize">Key Features</div>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 2, ease: "easeInOut" }}
+        viewport={{ once: true }}
+        className="kfright flex gap-8 bg-green shrink"
+        variants={cardVariants}
+      >
+        {cardData.map((card, index) => (
           <motion.div
-            initial={{ opacity: 0, x: -100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true }}
-            style={{
-              backgroundColor:
-                selectedOption === "bookedPhotographer"
-                  ? "#4AB11F"
-                  : "transparent",
-            }}
-            className="keyfeatureleft "
-            onClick={() => handleOptionClick("bookedPhotographer")}
+            key={index}
+            className="cardcontainer"
+            variants={cardVariants}
+            whileHover="hover"
           >
-            <div className="kfbltitle">
-              <span
-                style={{
-                  color:
-                    selectedOption === "bookedPhotographer"
-                      ? "white"
-                      : "#29A0F5",
-                }}
-              >
-                Booked a
-              </span>{" "}
-              Photographer
+            <div className="cardimage">
+              <img src={card.imageSrc} alt="" />
             </div>
-            <div className="kfbldesc">
-              Easily integrate with all your favorite tools through and APIs
-              including automatic.
-            </div>
+            <div className="cardtitle capitalize">{card.title}</div>
+            <div className="carddesc">{card.description}</div>
           </motion.div>
-          <motion.div
-            initial={{ opacity: 0, x: 100 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="keyfeatureright "
-            onClick={() => handleOptionClick("searchedPhotographer")}
-            style={{
-              backgroundColor:
-                selectedOption === "searchedPhotographer"
-                  ? "#4AB11F"
-                  : "transparent",
-            }}
-          >
-            <div className="kfbltitle">
-              <span
-                style={{
-                  color:
-                    selectedOption === "bookedPhotographer"
-                      ? "#29A0F5"
-                      : "white",
-                }}
-              >
-                Search
-              </span>{" "}
-              Photographer
-            </div>
-            <div className="kfbldesc">
-              Easily integrate with all your favorite tools through and APIs
-              including.
-            </div>
-          </motion.div>
-        </div>
-      </div>
-      <div className="bottom kfmockup">{renderComponent()}</div>
+        ))}
+      </motion.div>
     </div>
   );
 };
+
 export default Keyfeature;

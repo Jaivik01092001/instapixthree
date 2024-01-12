@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import logo from "../../Assets/Navbar logo.png";
 import "./Header.css";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -15,7 +16,13 @@ const Header = () => {
         className="bg-white hederhight dark:bg-gray-900 borderbottom"
         id="home"
       >
-        <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 2, ease: "easeInOut" }}
+          viewport={{ once: true }}
+          className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8"
+        >
           <div className="flex h-16 items-center justify-between hcontentheight">
             <div className="md:flex md:items-center md:gap-12">
               <a href="#home">
@@ -96,7 +103,7 @@ const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {isMenuOpen && (
           <div className="md:hidden mobilemenu">

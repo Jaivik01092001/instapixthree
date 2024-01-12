@@ -1,6 +1,8 @@
 .hitcontainer {
   background-color: #1d1c1f;
   padding: 8rem 0rem;
+  z-index: 3;
+  position: relative;
 }
 .hittop {
   font-family: var(--font-family-syne);
