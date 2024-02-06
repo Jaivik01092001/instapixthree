@@ -133,7 +133,6 @@ const Featureofinstapix = () => {
     }
     return null;
   };
-  const transition = { duration: 0.5, ease: "easeOut" };
   return (
     <>
       <div className="foicontainer" id="diycamera">
@@ -190,20 +189,3 @@ const Featureofinstapix = () => {
 };
 
 export default Featureofinstapix;
-
-// import React from "react";
-// import ReactCompareImage from "react-compare-image";
-// import beforeimg from "../../Assets/Features Comparison Images/Sky Replace-Before.jpg";
-// import afterimage from "../../Assets/Features Comparison Images/Sky Replace-After.jpg";
-
-// const Featureofinstapix = () => {
-//   return (
-//     <>
-//       <div>
-//         <ReactCompareImage leftImage={beforeimg} rightImage={afterimage} />;
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Featureofinstapix;

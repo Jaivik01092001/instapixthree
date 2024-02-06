@@ -26,11 +26,6 @@ const Keyfeature = () => {
     // Add more card data as needed
   ];
 
-  const kfVariants = {
-    hidden: { opacity: 0 },
-    visible: { opacity: 1 },
-  };
-
   const cardVariants = {
     hidden: { opacity: 0, y: 50 },
     visible: { opacity: 1, y: 0 },
